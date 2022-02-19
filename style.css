@@ -1,0 +1,108 @@
+body {
+    background-color: #FFFDA2;
+    font-family: 'Balsamiq Sans', cursive;
+    text-align: center;
+    min-width: 820px;
+}
+
+h1 {
+    font-family: 'Balsamiq Sans', cursive;
+    color: #FF6363;
+    font-size: 85px;
+    text-align: center;
+    font-weight: 800;
+    padding: 0;
+    margin: 25px;
+}
+
+#gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    justify-content: center;
+    
+}
+
+.squares {
+    border: solid 10px #FF6363;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    text-align: center;
+}
+.O {
+    width: 200px;
+    height: 200px;
+}
+
+.X {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 10px;
+}
+
+img {
+    pointer-events: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+}
+
+label {
+    margin-left: 20px;
+}
+
+#input {
+    text-align: center;
+}
+
+#start {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 20px;
+    background-color: #BAFFB4;
+    border: none;
+    font-size: 30px;
+}
+
+#start:hover {
+    background-color: #b9eeb3;
+}
+
+#start:active {
+    background-color: #a6ff9e;
+}
+
+#restart {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 20px;
+    background-color: #FFAB76;
+    border: none;
+    font-size: 30px;
+}
+
+#restart:hover {
+    background-color: #e29f75;
+}
+
+#restart:active {
+    background-color: #ffbc92;
+}
+
+
+#message {
+    font-size: 30px;
+    background-color: #BAFFB4;
+    padding: 15px;
+}

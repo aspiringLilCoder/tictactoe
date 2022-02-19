@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Tic Tac Toe</h1>
-    <input type="radio" name="marker" id="O"> O
-    <input type="radio" name="marker" id="X"> X
+        <div id="startMenu">
+            <div id="input">
+                <label for="playerX">
+                    Set Player X's Name:
+                    <input type="text" name="playerX" id="playerX">
+                </label>
+                <label for="playerO">
+                    Set Player O's Name:
+                    <input type="text" name="playerO" id="playerO">
+                </label>
+            </div>
+            <br>
+            <button id="start">Start</button>
+        </div>
+        <h2 id="message"></h2>
     <div id="gameboard">
        <div class="squares square1"></div>
        <div class="squares square2"></div>
@@ -22,6 +39,8 @@
        <div class="squares square8"></div>
        <div class="squares square9"></div>
     </div>
+
+    <button id="restart">Restart</button>
     <script src="script.js"></script>
 </body>
 </html>
